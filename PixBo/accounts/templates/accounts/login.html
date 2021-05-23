@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+<div class="container color-h1 loginForm">
+  <h1>Log in to <span class='blue'>P</span><span class="yellow">i</span><span class="green">x</span><span class="blue">B</span><span class="dark_blue">o</span></h1>
+  <br>
+  <form method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form show_label=False  %}
+    <input id='submitLoginButton' type="submit"  value="Log in">
+    <p id='textCenter'>Already have a pixer? <a id='accountCheck' href="{% url 'accounts:signup' %}">Sign up</a></p>
+  </form>
+</div>
+
+{% endblock %}

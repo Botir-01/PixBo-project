@@ -1,0 +1,398 @@
+html body{
+  background-color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+  color: #495057;
+}
+
+#color-change {
+  color: yellow;
+}
+
+img {
+  z-index: 1;
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+#color-change:hover {
+  color: white;
+}
+
+
+#note {
+         margin-top: 60px;
+    font-size: 70px;
+text-align:center;
+    color: #495057;
+
+}
+
+#discuss {
+  margin-top: 222px;
+    margin-left: 507px;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    display: flex;
+}
+
+
+#signup {
+  display: inline-block;
+  padding: 10px 20px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(29,161,242,1.00);
+  border-radius: 15px;
+  outline: none;
+  margin-top: 300px;
+  margin-left: 529px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 15px;
+}
+
+#signup:hover {
+  background-color: #0c85d0;
+}
+
+#login {
+  display: inline-block;
+  padding: 10px 20px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(29,161,242,1.00);
+  background-color: #ffffff;
+  border-radius: 15px;
+  outline: none;
+  font-size: 15px;
+  margin-top: 300px;
+  margin-left: 837px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid rgba(29,161,242,1.00);
+}
+
+#login:hover {
+  background-color: #f2f2f2;
+}
+
+.about {
+  position: absolute;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+.color-h1 {
+  color: #495057;
+}
+
+.loginForm {
+
+    text-align: center;
+padding-top:66px;
+
+}
+
+
+#signupheader {
+  margin-top: 15px;
+}
+
+#signupForm {
+  margin: auto;
+  position: absolute;
+  padding: auto;
+  margin-left: 0;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submitLoginButton {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #014289;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 15px;
+  border: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#submitLoginButton:hover {
+  background-color: #0c85d0;
+}
+
+#submitSignUpButton {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(29,161,242,1.00);
+  background-color: #ffffff;
+  border-radius: 15px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgba(29,161,242,1.00);
+}
+
+#submitSignUpButton:hover {
+  background-color: #f2f2f2;
+}
+
+#textCenter {
+  margin-top: 15px;
+}
+
+#accountCheck {
+  text-decoration: none;
+  color: #014289;
+}
+
+#accountCheck:hover {
+  text-decoration: underline;
+}
+
+.AbsPosition {
+  position: absolute;
+}
+
+.formPost {
+  margin: 0;
+}
+
+textarea.form-control {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#id_group {
+  margin: 0;
+}
+
+#postButton {
+  display: inline-block;
+  background-color: rgba(29,161,242,1.00);
+  color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#postButton:hover {
+  background-color: #0c85d0;
+}
+
+#createButton {
+  display: inline-block;
+  background-color: #014289;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#createButton:hover {
+  background-color: #0c85d0;
+}
+
+.group-list-user {
+  text-decoration: none;
+  color: #246076;
+}
+
+.group-list-user:hover {
+  color: #18404f;
+}
+
+.group-list {
+  margin-top: 20px;
+}
+
+.newGroupButton {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ffb703;
+  color: #ffffff;
+  border-radius: 15px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newGroupButton:hover {
+  background-color: #fb8500;
+}
+
+.list-group {
+  margin-top: 50px;
+}
+
+.group-create {
+  margin-top: 15px;
+}
+
+.form-create {
+  margin-top: 15px;
+}
+
+.container .container .row .formGroup .form-group .form-control {
+  margin-left: 0;
+}
+
+.groupName {
+  margin-top: 15px;
+  text-align: auto;
+  font-size: 50px;
+}
+
+.groupMembers {
+  font-size: 25px;
+}
+
+.btnJoin {
+  background-color: #0096c7;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+  outline: none;
+  font-size: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 44px;
+  width: 99.08px;
+}
+
+.btnJoin:hover {
+  background-color: #0077b6;
+}
+
+.btnLeave {
+  background-color: #ffba08;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+  outline: none;
+  font-size: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btnLeave:hover {
+  background-color: #faa307;
+}
+
+.userPostText {
+  margin-left: 0px;
+  width: 350px;
+  height: 85px;
+  word-break: break-all;
+  overflow: auto;
+}
+
+.div-p2 {
+  width: 319.98px;
+  height: 85px;
+}
+
+
+.username {
+  font-size: 25px;
+}
+
+.time {
+  text-decoration: none;
+  color: #0d95e8;
+}
+
+.time:hover {
+  color: #0c85d0;
+}
+
+.deleteButton {
+  background-color: rgb(220,20,60);
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 13px;
+  outline: none;
+  font-size: 13px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.userPostHistory {
+  margin-left: 10px;
+}
+
+.btn {
+  border-radius: 15px;
+}
+
+.coll {
+  width: auto;
+}
+.discuss{
+  display: flex;
+}
+
+
+
+@media (min-width:600px) and (max-width:1000px){
+flex-wrap:wrap
+}
+
+@media (max-width:600px){
+flex-wrap:wrap
+width:576px;
+}
+
+.blue {
+  color: #014289;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: #06d6a0;
+}
+
+.dark_blue {
+  color: #ef476f;
+}

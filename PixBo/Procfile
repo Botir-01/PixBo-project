@@ -1,0 +1,1 @@
+web: gunicorn WebsterCom.wsgi --log-file -

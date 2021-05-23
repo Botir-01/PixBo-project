@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="page-posts AbsPosition">
+    <div class="container">
+      <div class="row">
+        {% block  prepost %}{% endblock %}
+        {% block  content_post %}{% endblock %}
+        {% block  post_for_post %}{% endblock %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

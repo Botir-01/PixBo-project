@@ -1,0 +1,51 @@
+{% extends "groups/base_group.html" %}
+
+{% block pregoup %}
+  <div class="col-md-4 color-h1">
+    <div class="content">
+      {% if user.is_authenticated %}
+        <h2 class="group-list">Welcome
+          <a class="group-list-user" href="{% url 'posts:for_user' username=user.username %}" >
+            @{{user.username}}
+          </a>
+        </h2>
+
+      {% endif %}
+      <h2 class="form-create">Groups</h2>
+
+    </div>
+    {% if user.is_authenticated %}
+      <a  href="{% url 'groups:create' %}" class='btn newGroupButton'>
+        <i class="fas fa-plus"> New Topic</i>
+      </a>
+    {% endif %}
+  </div>
+{% endblock %}
+
+
+{% block group_content %}
+  <div class="col-md-8">
+    <div class="list-group">
+      {% for group in object_list %}
+      <br>
+        <a class='list-group-item list-group-item-action' href="{% url 'groups:single' slug=group.slug %}">
+          <h3 class="title list-group-item-heading">{{ group.name }}</h3>
+          <div class="container-fluid list-group-item-text">
+            {{ group.description_html|safe }}
+            <div class="row">
+              <div class="col-md-4">
+                <span class="badge bg-info text-dark">{{ group.members.count }}</span>
+                pixers
+              </div>
+              <div class="col-md-4">
+                <span class="badge bg-secondary">{{ group.posts.count }}</span>
+                pixes
+              </div>
+            </div>
+          </div>
+        </a>
+        <br>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "posts/base_post.html" %}
+{% load bootstrap5 %}
+
+{% block content_post %}
+  <div>
+    <h4 class="color-h1 form-create" >Add a new Pix</h4>
+    <form class="color-h1 formPost"  id='form-control' action="{% url 'posts:new' %}" method="POST">
+      {% csrf_token %}
+      {% bootstrap_form form  %}
+      <input id="postButton" type="submit" value="Post" class="btn btn-large">
+    </form>
+  </div>
+
+{% endblock %}

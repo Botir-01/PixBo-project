@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load bootstrap5 %}
+
+{% block content %}
+
+<div class="col-4 w-100 " >
+  <h2 id='note'>
+    <div></div> <div>Join <span class='blue'>P</span><span class="yellow">i</span><span class="green">x</span><span class="blue">B</span><span class="dark_blue">o</span> today.</div></h2>
+</div>
+<!--<div class="card"></div>-->
+<!--<label for="input1"></label>-->
+<!--<input type="username" id="input1 submitLoginButton" placeholder="Username " class="text-muted  shadow-0"></input>-->
+
+<!--<label for="input2"></label>-->
+<!--<input type="password" id="input2 submitLoginButton" placeholder="Password" class="text-muted  shadow-0"></input>-->
+<!--<div class="button-class">-->
+<!--  <a id='signup' href="{% url 'accounts:signup' %}"><strong>Sign up</strong></a>-->
+<!--  <a id='login' href="{% url 'accounts:login' %}"><strong>Log in</strong></a>-->
+<!--</div>-->
+
+
+
+<div class="container color-h1 loginForm">
+  <h1>Log in</h1>
+  <br>
+  <form method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form show_label=False  %}
+    <input id='submitLoginButton' type="submit"  value="Log in">
+    <p id='textCenter'>Already have a pixer? <a id='accountCheck' href="{% url 'accounts:signup' %}">Sign up</a></p>
+  </form>
+</div>
+
+
+
+{% endblock %}

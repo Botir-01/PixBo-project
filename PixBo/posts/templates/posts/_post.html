@@ -1,0 +1,18 @@
+<div class="d-flex border bg-light m-3 shadow p-3 mb-5 bg-white rounded">
+  <div class="p-2 flex-grow-1 userPostText">{{ post.message_html|safe }}</div>
+  <div class="p-2">
+    {# <strong>{{ post.user.username }}</strong> #}
+    <h5>
+    <span><a class="group-list-user username" href="{% url 'posts:for_user' username=post.user.username %}">@{{ post.user.username }}</a></span>
+    <time><a class="time" href="{% url 'posts:single' username=post.user.username pk=post.pk%}">{{ post.created_at }}</a></time>
+    </h5>
+    <div>
+      {% if user.is_authenticated and post.user == user and not hide_delete %}
+      <a href="{% url 'posts:delete' pk=post.pk %}" title="delete" class="btn deleteButton">
+        <i class="fas fa-trash-alt" aria-hidden='true'></i>
+        <span>Delete</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
